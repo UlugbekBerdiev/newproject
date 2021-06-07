@@ -4,6 +4,7 @@ import com.github.javafaker.Faker;
 import cucumber.api.java.eo.Se;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
+import utilities.BrowserUtils;
 import utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -53,6 +54,7 @@ public class SignUpPage {
 		email.sendKeys(email3);
 		password.sendKeys(password2);
 		checkBoxAgree.click();
+		BrowserUtils.highlightElement(	NextButton);
 		NextButton.click();
 		System.out.println( firstName2 + " " + lastName1 + " " + email3 + " " + password2);
 	}

@@ -1,0 +1,96 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-01T02:21:05.370Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8322083800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Create account",
+        "description": "",
+        "id": "testcase1;create-account",
+        "after": [
+          {
+            "result": {
+              "duration": 782033500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5790740900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User in create account page",
+            "match": {
+              "location": "SingnUpPageTest.user_in_create_account_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2339416100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User fill out all inputs",
+            "match": {
+              "location": "SingnUpPageTest.user_fill_out_all_inputs()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5046953800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should see page with his name",
+            "match": {
+              "location": "SingnUpPageTest.user_should_see_page_with_his_name()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "TestCase1",
+    "description": "",
+    "id": "testcase1",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/TestCase1.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

@@ -1,7 +1,9 @@
 package stepDefinitions;
 
+import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import utilities.BrowserUtils;
 import utilities.Config;
 import utilities.Driver;
 
@@ -18,7 +20,10 @@ public class Hooks {
     }
 
     @After
-    public void tearDown() {
+    public void tearDown(Scenario scenario) {
+        if (scenario.isFailed()) {
+           BrowserUtils.takeSnapShot(Driver.get(), "target/ScreenShots/fale.png");
+        }
         Driver.qute();
     }
 }

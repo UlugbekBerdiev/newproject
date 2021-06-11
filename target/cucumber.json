@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-06-01T02:21:05.370Z",
+        "start_timestamp": "2021-06-11T22:41:46.011Z",
         "before": [
           {
             "result": {
-              "duration": 8322083800,
+              "duration": 24131131900,
               "status": "passed"
             },
             "match": {
@@ -22,11 +22,11 @@
         "after": [
           {
             "result": {
-              "duration": 782033500,
+              "duration": 756693000,
               "status": "passed"
             },
             "match": {
-              "location": "Hooks.tearDown()"
+              "location": "Hooks.tearDown(Scenario)"
             }
           }
         ],
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5790740900,
+              "duration": 8531979500,
               "status": "passed"
             },
             "line": 6,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 2339416100,
+              "duration": 5803871400,
               "status": "passed"
             },
             "line": 7,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 5046953800,
+              "duration": 3814853100,
               "status": "passed"
             },
             "line": 8,

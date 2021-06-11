@@ -18,7 +18,7 @@ public class SignUpPage {
 	public String lastName1;
 	public String password2;
 	public String email3;
-	
+	public static Select select;
 	@FindBy(name = "firstName")
 	public WebElement firstName;
 	
@@ -37,8 +37,8 @@ public class SignUpPage {
 	@FindBy(xpath = "//button[text() = 'Next']")
 	public WebElement NextButton;
 
-	public void selectState(String text){
-		Select select = new Select(Driver.get().findElement(By.tagName("Select")));
+	public static void selectState(String text){
+		select = new Select(Driver.get().findElement(By.tagName("Select")));
 		select.selectByVisibleText(text);
 	}
 
